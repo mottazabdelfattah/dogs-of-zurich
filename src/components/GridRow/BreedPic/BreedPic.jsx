@@ -2,18 +2,18 @@ import './BreedPic.css'
 import { useState, useEffect } from 'react';
 export default function BreedPic({name}){
     
-    const [imageSrc, setImageSrc] = useState(`/src/assets/dog_pics/${name}.webp`);
+    const [imageSrc, setImageSrc] = useState(`${import.meta.env.BASE_URL}/dog_pics/${name}.webp`);
 
     // useEffect to listen to change in {name} when the grid is ordered
     useEffect(() => {
       const img = new Image();  
       img.onload = () => {
-        setImageSrc(`/src/assets/dog_pics/${name}.webp`); 
+        setImageSrc(`${import.meta.env.BASE_URL}/dog_pics/${name}.webp`); 
       };
       img.onerror = () => {
-        setImageSrc('/src/assets/dog_pics/dog-paw.webp');  // default image
+        setImageSrc('${import.meta.env.BASE_URL}/dog_pics/dog-paw.webp');  // default image
       };
-      img.src = `/src/assets/dog_pics/${name}.webp`;  
+      img.src = `${import.meta.env.BASE_URL}/dog_pics/${name}.webp`;  
     }, [name]);
     
     return <>
