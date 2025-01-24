@@ -11,7 +11,7 @@ export default function BreedPic({name}){
         setImageSrc(`${import.meta.env.BASE_URL}/dog_pics/${name}.webp`); 
       };
       img.onerror = () => {
-        setImageSrc('${import.meta.env.BASE_URL}/dog_pics/dog-paw.webp');  // default image
+        setImageSrc(`${import.meta.env.BASE_URL}/dog_pics/dog-paw.webp`);  // default image
       };
       img.src = `${import.meta.env.BASE_URL}/dog_pics/${name}.webp`;  
     }, [name]);
