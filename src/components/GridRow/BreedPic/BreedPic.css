@@ -1,0 +1,29 @@
+.thumbnail-container {
+    display: flex;
+    position: relative;
+    gap: 5px;
+  }
+  
+  .thumbnail {
+    width: 30px;  
+    height: 30px;  
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    object-fit: cover;  
+  }
+  
+  .thumbnail:hover {
+    transform: scale(3); 
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5); 
+  }
+  
+  .thumbnail-container:hover .thumbnail {
+    z-index: 10; 
+  }
+  
+  .label {
+    text-align: center;
+    margin-top: 5px;
+  }
+  
+  

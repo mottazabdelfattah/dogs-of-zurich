@@ -1,0 +1,56 @@
+.grid-row {
+  display: flex; 
+  height: 30px;
+  margin: 2px;
+}
+.grid-header {
+  display: flex; 
+  height: 80px;
+  margin: 2px;
+  border-bottom: 2px solid #ad9d9d;
+  margin-bottom: 10px;
+}
+
+.grid-row div, .grid-header div {
+  width: 170px; 
+  margin: 0px;
+  
+}
+
+.grid-row p.label, .grid-header  p.label {
+  font-size: 12px;
+  text-align: left;
+}
+
+.header-item {
+  align-items: center; 
+}
+
+.header-label {
+  margin: 0; 
+  
+}
+
+.header-subtitle {
+  margin: 0; 
+  font-size: 12px; 
+  display: inline-block;
+  width: 150px;
+}
+
+.sort-button {
+  font-size: 8px; 
+  padding: 2px 6px; 
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  color: inherit;
+}
+
+.sort-button span {
+  font-size: 12px; 
+}
+
+.txtLbl {
+  pointer-events: none;
+}
